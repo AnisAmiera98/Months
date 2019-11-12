@@ -1,0 +1,32 @@
+// Example program
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+#include <string>
+using namespace std;
+
+
+int main()
+{
+	int days[12];
+	days[0] = 31;
+	days[1] = 28;
+	days[2] = 31;
+	days[3] = 30;
+	days[4] = 31;
+	days[5] = 30;
+	days[6] = 31;
+	days[7] = 31;
+	days[8] = 30;
+	days[9] = 31;
+	days[10] = 30;
+	days[11] = 31;
+	
+	string month[12] = {"January","February","March","April","May","June","July","August","Sept","Oct","Nov","Dec"};
+	
+	
+	for  (int i = 0; i<12; i++)
+	     cout << month[i] << setw(7)<< "  is  " <<setw(3)<<days[i]<< " days "<<endl;
+
+	return 0;
+}
